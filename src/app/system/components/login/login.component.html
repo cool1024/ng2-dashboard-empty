@@ -1,0 +1,40 @@
+<div class="pad" [ngStyle]="{'background-image':'url('+loginPageConfig.bgImage+')' }">
+    <div class="pad-window" [ngStyle]="{'background-color': bgColor}">
+        <div class="window p-3">
+            <div class="window-header">
+                <table class="w-100">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3><i class="{{loginPageConfig.icon}}"></i>{{loginPageConfig.title}}</h3>
+                                <p [hidden]="!!message">{{loginPageConfig.description}}</p>
+                                <p [hidden]="!message" class="text-danger">{{message}}</p>
+                            </td>
+                            <td class="text-right">
+                                <img src="{{loginPageConfig.avatar}}" class="pull-right">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <form #loginForm="ngForm" (ngSubmit)="doLogin()">
+                <div class="login-input">
+                    <span class="{{loginPageConfig.inputs[0].icon}} pl-2 pr-2"></span>
+                    <input name="loginPageConfig.inputs[0].name" #account="ngModel" [(ngModel)]="loginParams[loginPageConfig.inputs[0].name]" type="text" placeholder="{{loginPageConfig.inputs[0].placeholder}}" required>
+                </div>
+                <br>
+                <div class="login-input">
+                    <span class="{{loginPageConfig.inputs[1].icon}} pl-2 pr-2" aria-hidden="true"></span>
+                    <input name="loginPageConfig.inputs[1].name" #password="ngModel" [(ngModel)]="loginParams[loginPageConfig.inputs[1].name]" type="password" placeholder="{{loginPageConfig.inputs[1].placeholder}}" required>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" [disabled]="!loginForm.form.valid" class="btn btn-primary rounded-0 btn-lg btn-block">
+                        <i class="fa fa-sign-in mr-2" aria-hidden="true"></i>{{loginPageConfig.button}}
+                    </button>
+                </div>
+            </form>
+        </div>
+        <footer class="fixed-bottom text-center window-header"><i>{{loginPageConfig.footer}}</i></footer>
+    </div>
+</div>

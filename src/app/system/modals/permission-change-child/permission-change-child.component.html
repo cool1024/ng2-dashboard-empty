@@ -1,0 +1,30 @@
+<div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">{{title||'未设置'}}@编辑权限</h5>
+    <button type="button" class="close pointer" (click)="close()" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form #changeForm="ngForm">
+        <div class="form-group">
+            <label class="form-control-label">权限名称:</label>
+            <input type="text" class="form-control rounded-0" id="recipient-name" name="name" [(ngModel)]="permission.name" placeholder="请输入权限名称" required>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label">关键词:</label>
+            <input class="form-control" [(ngModel)]="permission.key" name="key" placeholder="请输入权限关键词" required>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label">权限描述:</label>
+            <textarea class="form-control rounded-0" id="message-text" name="description" maxlength="100" [(ngModel)]="permission.description" placeholder="请输入角色描述" required></textarea>
+            <p class="text-right">{{permission.description.length||0}}/100</p>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="close()">
+        <!-- <i class="fa fa-angle-left fa-fw"></i> -->
+        <span>取消/返回</span>
+    </button>
+    <button type="button" [disabled]="!changeForm.form.valid" loading title="确认修改" class="btn btn-success" #button="btnLoading" (click)="applayPermissionChange(button)"></button>
+</div>

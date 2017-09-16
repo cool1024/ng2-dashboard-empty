@@ -1,0 +1,41 @@
+.app-pad {
+    padding-left: 280px;
+    width: 100%;
+}
+
+.app-pad-small {
+    padding-left: 70px;
+}
+
+.app-pad-menu-small {
+    width: 70px !important;
+    transition: all .5s ease-out;
+}
+
+.app-pad-menu-small:hover {
+    width: 280px !important;
+    transition: all .5s ease-out;
+}
+
+.app-pad-menu {
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0; // background-image: url('/assets/image/sidebar.jpg');
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-shadow: 1px 2px 3px black;
+}
+
+.app-pad-cotent {
+    margin-top: 70px;
+    min-width: 500px;
+}
+
+.right-side-bar {
+    background-color: white;
+    width: 300px;
+    right: 0;
+}

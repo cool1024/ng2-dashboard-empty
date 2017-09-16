@@ -1,0 +1,194 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~ngx-toastr/toastr.css';
+@import 'assets/prism/themes/prism-tomorrow.css';
+@import 'theme/loading-squre.scss';
+@import 'theme/loading-circle.scss';
+
+/*default css*/
+
+* {
+    font-family: '微软雅黑', 'KaiTi';
+}
+
+input,
+select,
+textarea,
+table,
+th,
+td,
+tr,
+button {
+    font-family: '微软雅黑', 'KaiTi';
+}
+
+td {
+    vertical-align: middle !important;
+}
+
+td img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+
+/* 设置滚动条的样式 */
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+}
+
+ ::-webkit-scrollbar-track,
+ ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    border: 5px solid transparent;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2) inset;
+}
+
+ ::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background-clip: content-box;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, .2) inset;
+}
+
+ ::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+body {
+    background-color: rgb(245, 243, 243);
+}
+
+a,
+button,
+input,
+select {
+    outline: 0 none !important;
+    text-decoration: none !important;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.btn:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:disabled {
+    cursor: not-allowed !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.d-hidden {
+    display: none !important;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #dfdfdf;
+}
+
+.card-shadow {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    border-style: none !important;
+    border-radius: 0;
+}
+
+.card-border {
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.breadcrumb {
+    background-color: transparent !important;
+}
+
+.breadcrumb-item {
+    float: none;
+}
+
+.breadcrumb-pad {
+    position: fixed;
+    z-index: 4;
+    margin-top: -60px !important;
+    margin-left: 50px !important;
+}
+
+input,
+button,
+a,
+div {
+    outline: 0 none !important;
+}
+
+
+/*ng2-select*/
+
+.dropdown-menu {
+    display: inline-block !important;
+}
+
+.ui-select-toggle {
+    background-color: white !important;
+    color: black !important;
+}
+
+
+/*WYSIWYG HTML Editor*/
+
+.fr-sticky {
+    z-index: 2 !important;
+}
+
+.fr-toolbar {
+    border-top: 5px solid #C5C5C5 !important;
+}
+
+.fr-wrapper div a {
+    visibility: hidden;
+    height: 0px;
+    position: absolute;
+}
+
+.fr-wrapper div p a {
+    display: inline !important;
+}
+
+.loading-dom {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white; //rgba(255, 255, 255, 0.2) !important;
+}

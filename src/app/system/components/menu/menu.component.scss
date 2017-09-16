@@ -1,0 +1,123 @@
+.app-menu {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.app-menu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}
+
+.app-menu::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.menu-title {
+    width: 280px;
+    line-height: 60px;
+    height: 60px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.menu-title img {
+    width: 32px;
+    height: 32px;
+    margin-left: 1.3rem !important;
+}
+
+.avatar {
+    box-shadow: 0px 0px 1px #7e7e7e; // border: 1px solid white;
+}
+
+.menu-list-active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-line {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu-manager-title {
+    width: 280px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.menu-manager-title .right-icon {
+    line-height: 60px;
+}
+
+.menu-manager-item {
+    width: 280px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.icon {
+    font-size: 20px;
+    display: inline-block;
+    width: 22px;
+}
+
+.hover-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.menu-item-main {
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu-item-main .right-icon {
+    line-height: 50px;
+}
+
+.icon-up {
+    animation: icon-up 1s linear forwards;
+}
+
+.icon-down {
+    animation: icon-down 1s linear forwards;
+}
+
+.menu-item-child {
+    width: 280px;
+    line-height: 50px;
+    height: 50px;
+}
+
+.menu-block .active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes icon-up {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes icon-down {
+    0% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
