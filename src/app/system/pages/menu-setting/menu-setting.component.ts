@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MdDialog, MD_DIALOG_DATA, MdDialogRef } from '@angular/material';
+import { MdDialog, MD_DIALOG_DATA } from '@angular/material';
 import { DialogDanger } from './../../tools/components/dialog';
-import { Menus } from './../../../config/menus';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormCheckService } from './../../services/form-check.service';
 import { MenuSettingService } from './menu-setting.service';
@@ -25,7 +24,6 @@ export class MenuSettingComponent implements OnInit {
   constructor(public dialog: MdDialog, private modalService: NgbModal, private toast: ToastrService, private menuSettingService: MenuSettingService, private formService: FormCheckService) { }
 
   ngOnInit() {
-    //this.menus = this.menus.concat(Menus)
     this.loadMenus()
   }
 

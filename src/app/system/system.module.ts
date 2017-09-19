@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { MdButtonModule, MdInputModule, MdDialogModule, MdMenuModule, MdListModule, MdCardModule } from '@angular/material';
-import { SortablejsModule } from 'angular-sortablejs';
+import { MdButtonModule, MdInputModule, MdMenuModule } from '@angular/material';
 import { SystemRoutingModule } from './system.routing';
 
 /*ng-bootstrap*/
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
-
-/*tool module*/
-import { ToolModule } from './../system/tools/tool.module';
 
 /*default components & pages*/
 import { MenuComponent } from './components/menu/menu.component';
@@ -23,22 +19,16 @@ import { AccountSettingComponent } from './modals/account-setting/account-settin
   imports: [
     CommonModule,
     FormsModule,
-    SortablejsModule,
     NgbModalModule,
 
     /*material module*/
     MdButtonModule,
     MdInputModule,
-    MdDialogModule,
     MdMenuModule,
-    MdListModule,
-    MdCardModule,
 
     /*system module*/
     SystemRoutingModule,
 
-    /*tool module*/
-    ToolModule,
   ],
   declarations: [
     HomeComponent,

@@ -18,5 +18,5 @@
 </div>
 <div class="modal-footer">
     <button type="button" class="btn btn-secondary" (click)="close()"><span>取消/返回</span></button>
-    <button type="button" [disabled]="!changeForm.form.valid" loading title="确认修改" class="btn btn-success" #button="btnLoading" (click)="changeAccount(button)"></button>
+    <button type="button" [disabled]="!changeForm.form.valid" class="btn btn-success" (click)="changeAccount()">确认修改</button>
 </div>

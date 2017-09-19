@@ -2,16 +2,6 @@ import { Injectable } from '@angular/core';
 
 const id: string = "app-loading-service-dom-index-1000"
 const flash: any = {
-  span:
-  `
-      <div class="loading-span-dom">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    `,
   squre:
   `
       <div class="circle-loader">
@@ -53,17 +43,6 @@ export class LoadingService {
 
   constructor() { }
 
-  /*icon loading*/
-  show(config: { icon: string } = { icon: "fa fa-spinner fa-pulse fa-5x fa-fw" }) {
-    this.remove()
-    let dom: HTMLDivElement = this.create()
-    dom.innerHTML = `
-      <i class="${config.icon}"></i>
-      <span class="sr-only">Loading...</span>
-    `
-    document.body.appendChild(dom)
-  }
-
   /*css3 loading*/
   play(player: string) {
     this.remove()
@@ -91,7 +70,7 @@ export class LoadingService {
     }
   }
 
-  get player(): { span: string, squre: string ,circle:string} {
+  get player(): { span: string, squre: string, circle: string } {
     return flash
   }
 

@@ -1,7 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { AuthService } from './../../services/auth.service';
-import 'rxjs/add/operator/finally';
 
 @Component({
   selector: 'app-account-setting',
@@ -19,8 +18,8 @@ export class AccountSettingComponent {
   }
 
   //修改账户
-  changeAccount(button) {
-    this.authService.changeUserInfo({ password: this.password }).finally(() => button.complete = true).subscribe(res => {
+  changeAccount() {
+    this.authService.changeUserInfo({ password: this.password }).subscribe(res => {
       if (res.result) {
         this.activeModal.dismiss()
       }
