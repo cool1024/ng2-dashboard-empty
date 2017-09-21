@@ -1,14 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+/*material theme scss*/
+
+@import 'theme/theme-material.scss';
+
+/*ngx toastr css*/
+
 @import '~ngx-toastr/toastr.css';
-@import 'assets/prism/themes/prism-tomorrow.css';
+
+/*loading css*/
+
 @import 'theme/loading-squre.scss';
 @import 'theme/loading-circle.scss';
 
-/*default css*/
+/*ng2-select*/
+
+.dropdown-menu {
+    display: inline-block !important;
+}
+
+.ui-select-toggle {
+    background-color: white !important;
+    color: black !important;
+}
+
+
+/*default scss*/
 
 * {
     font-family: '微软雅黑', 'KaiTi';
+}
+
+body {
+    background-color: rgb(245, 243, 243);
 }
 
 input,
@@ -31,9 +56,6 @@ td img {
     width: 32px;
     border-radius: 50%;
 }
-
-
-/* 设置滚动条的样式 */
 
 ::-webkit-scrollbar {
     width: 14px;
@@ -61,16 +83,17 @@ td img {
     background: transparent;
 }
 
-body {
-    background-color: rgb(245, 243, 243);
-}
-
 a,
 button,
 input,
-select {
+select,
+{
     outline: 0 none !important;
     text-decoration: none !important;
+}
+
+div {
+    outline: 0 none !important;
 }
 
 a:link {
@@ -106,31 +129,6 @@ a:visited {
     cursor: pointer;
 }
 
-.bg-white {
-    background-color: white;
-}
-
-.d-hidden {
-    display: none !important;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    background-color: #dfdfdf;
-}
-
-.card-shadow {
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
-    border-style: none !important;
-    border-radius: 0;
-}
-
-.card-border {
-    box-shadow: none !important;
-    border: 1px solid rgba(0, 0, 0, .125);
-}
-
 .breadcrumb {
     background-color: transparent !important;
 }
@@ -146,49 +144,6 @@ a:visited {
     margin-left: 50px !important;
 }
 
-input,
-button,
-a,
-div {
-    outline: 0 none !important;
-}
-
-
-/*ng2-select*/
-
-.dropdown-menu {
-    display: inline-block !important;
-}
-
-.ui-select-toggle {
-    background-color: white !important;
-    color: black !important;
-}
-
-
-/*WYSIWYG HTML Editor*/
-
-.fr-sticky {
-    z-index: 2 !important;
-}
-
-.fr-toolbar {
-    border-top: 5px solid #C5C5C5 !important;
-}
-
-.fr-wrapper div a {
-    visibility: hidden;
-    height: 0px;
-    position: absolute;
-}
-
-.fr-wrapper div p a {
-    display: inline !important;
-}
-
 .loading-dom {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    background-color: white; //rgba(255, 255, 255, 0.2) !important;
+    background-color: white;
 }

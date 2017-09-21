@@ -1,10 +1,10 @@
-import { DomTestPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('dom-test App', () => {
-  let page: DomTestPage;
+describe('ng2-api-docs App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new DomTestPage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {

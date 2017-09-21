@@ -1,47 +1,28 @@
-#cnpm replace npm
+# Ng2ApiDocs
 
-# install
-`npm install`
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
 
-# run
-`ng serve --open`
+## Development server
 
-# build
-`ng build --env=prod`
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-# angular/cli 1.2.7
+## Code scaffolding
 
-# run on nginx
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-you need that
+## Build
 
-` try_files $uri $uri/ /index.html?$query_string; `
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-replace the old
+## Running unit tests
 
-` try_files $uri $uri/ =404; `
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-#update angular/cli
+## Running end-to-end tests
 
-```
-global install
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
 
-npm install -g @angular/cli@latest
+## Further help
 
-project install
-
-npm install --save-dev @angular/cli@latest
-```
-
-#link source in your index.html
-
-support IE9+
-` <script src="http://hello1024.oss-cn-beijing.aliyuncs.com/ng-dashboard/classList.min.js"></script> `
-` <script src="http://hello1024.oss-cn-beijing.aliyuncs.com/ng-dashboard/shim.min.js"></script> `
-
-add bootstrap
-` <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" /> `
-
-add font-awesome
-` <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> `
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
