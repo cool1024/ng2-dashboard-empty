@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { MdButtonModule, MdDialogModule, MdCheckboxModule, MdSlideToggleModule } from '@angular/material';
+import { MdButtonModule, MdInputModule, MdDialogModule, MdMenuModule, MdCheckboxModule, MdSlideToggleModule, MdListModule ,MdCardModule} from '@angular/material';
 import { SortablejsModule } from 'angular-sortablejs';
 import { SystemPageRoutingModule } from './system-page.routing';
 
@@ -44,10 +44,14 @@ import { AdminAddComponent } from './modals/admin-add/admin-add.component';
 
     /*material module*/
     MdButtonModule,
+    MdInputModule,
     MdDialogModule,
+    MdMenuModule,
     MdCheckboxModule,
     MdSlideToggleModule,
-
+    MdListModule,
+    MdCardModule,
+    
     /*system module*/
     SystemPageRoutingModule,
 
