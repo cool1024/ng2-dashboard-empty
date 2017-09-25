@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
-// import 'rxjs/add/operator/timeout';
 import { ToastrService } from 'ngx-toastr';
 import { ApiData, ErrorMessages } from './../classes/api'
 

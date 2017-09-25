@@ -35,11 +35,10 @@ export class AuthService {
 
   //检测登入状态
   checkOnline(): Observable<boolean> {
-    let obs = new Observable<boolean>()
     let token = this.storageService.getToken()
     for (let key in token) {
       if (!token[key]) {
-        return Observable.create(obs => obs.next(false))
+        return Observable.of(false)//create(obs => obs.next(false))
       }
     }
     return this.request.post('/check', token).map(res => {
