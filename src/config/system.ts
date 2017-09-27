@@ -6,7 +6,6 @@ export const Config = {
     SERVER: {
         server: 'http://ng.cool1024.com',//API接口访问地址
         source: 'http://ng.cool1024.com',//资源文件访问地址
-        timeout: 1000//服务器超时
     },
     /*系统主题配置*/
     THEME: {

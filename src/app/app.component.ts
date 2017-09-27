@@ -2,7 +2,7 @@ import { Component, ViewContainerRef, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from './../dashboard/services/auth.service';
 import { SystemService } from './../dashboard/system.service';
-import { LoadingService } from './../dashboard/services/loading.service';
+import { LoadingService } from './../tools/services/loading.service';
 import 'rxjs/add/operator/finally';
 
 @Component({

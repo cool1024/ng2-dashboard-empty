@@ -38,7 +38,7 @@ export class AuthService {
     let token = this.storageService.getToken()
     for (let key in token) {
       if (!token[key]) {
-        return Observable.of(false)//create(obs => obs.next(false))
+        return Observable.of(false)
       }
     }
     return this.request.post('/check', token).map(res => {
@@ -58,7 +58,6 @@ export class AuthService {
       for (let key in res.datas) {
         this.user[key] = res.datas[key]
       }
-      console.log(this.user)
     })
   }
 
