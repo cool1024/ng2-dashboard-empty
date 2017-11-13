@@ -43,7 +43,6 @@ export class MenuAddChildComponent {
       if (res.result) {
         this.menu.id = res.id
         this.activeModal.dismiss(this.menu)
-        this.toast.success('添加成功~', '操作成功')
       }
     })
   }
