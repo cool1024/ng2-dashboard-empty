@@ -10,6 +10,9 @@ import { ToastrModule } from 'ngx-toastr';
 /*ng-bootstrap*/
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
+/*ng-bootstrap*/
+import { SortablejsModule } from 'angular-sortablejs';
+
 /*routing module*/
 import { AppRoutingModule } from './app.routing';
 
@@ -48,10 +51,13 @@ import { AppComponent } from './app.component';
     /*ng-bootstrap*/
     NgbModalModule.forRoot(),
 
+    /*sortablejs*/
+    SortablejsModule.forRoot({}),
+
     /*app routing*/
     AppRoutingModule,
 
-    //system module must the end
+    /*system module must the end*/
     SystemModule,
   ],
   providers: [

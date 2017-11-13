@@ -18,6 +18,7 @@
 
 * {
     font-family: '微软雅黑', 'KaiTi';
+    font-size: 15px;
 }
 
 body {
@@ -134,4 +135,14 @@ a:visited {
 
 .loading-dom {
     background-color: white;
+}
+
+.ui-select-choices {
+    display: block !important;
+}
+
+.ui-select-match .btn-secondary {
+    background-color: white !important;
+    border: 1px solid rgba(0, 0, 0, .15) !important;
+    color: black !important;
 }
